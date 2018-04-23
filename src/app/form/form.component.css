@@ -1,0 +1,36 @@
+div{
+    height:500px ;
+    padding-top: 10%;
+    margin-left: 0%;
+}
+input{
+    width: 70%;
+    margin-top: 2%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(121, 113, 113);
+    outline: none;
+    font-size: 18px;
+    color:black;
+}
+
+#post-button{
+    margin-top: 10%;
+    height: 50px;
+    background-color: #04aad3;
+    border: none;
+    outline: none;
+    color: white;
+    width: 70%;
+    font-size: 18px;
+    border-radius:18px;
+    margin-left: 0%;
+}
+
+#post-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

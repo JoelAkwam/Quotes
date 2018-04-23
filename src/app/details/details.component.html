@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-form (addQuote)="addNewQuote($event)"></app-form>
+    </div>
+    <div class="col-md-6">
+      <div class="post">
+        <h6>
+          <b>Name:</b>{{newQuote.name}}</h6>
+        <h6>
+          <b>Author:</b>{{newQuote.author}}</h6>
+        <hr>
+        <p>{{newQuote.quotez}}</p>
+        <button>Like</button>
+        <button>Dislike</button>
+        <button (click)='quoteDelete(true)'>Delete</button>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
