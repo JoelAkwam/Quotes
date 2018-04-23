@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailsComponent } from './details/details.component';
 import { FormComponent } from './form/form.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormComponent } from './form/form.component';
     AppComponent,
     HeaderComponent,
     DetailsComponent,
-    FormComponent
+    FormComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

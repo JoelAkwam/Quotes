@@ -1,3 +1,25 @@
 <div class="jumbotron">
   <h1>"Quotes"</h1>
 </div>
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+  <app-form (addQuote)="newQuote($event)"></app-form>
+</div>
+<div class="col-md-6">
+  <div class=" post" *ngFor="let quote of quotes; let  i =index">
+
+    <div appHighlight *ngIf="quote.upvotes===getHighest() && quote.upvotes>0">
+    </div>
+    <div *ngIf="quote.upvotes!==getHighest() || quote.upvotes===0">
+     
+    </div>
+    <app-details [quote]="quote"></app-details>
+    <button (click)="upVote(i)">Like {{quote.upvotes}}</button>
+    <button (click)="downVote(i)">Dislike {{quote.downvotes}}</button>
+    <button (click)="delQuote(i)">Delete</button>
+
+  </div>
+</div>
+</div>
+</div>
